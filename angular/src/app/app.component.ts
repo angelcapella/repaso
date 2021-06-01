@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ɵɵtrustConstantResourceUrl } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  userInput='soy un texto';
+
+  handleUserInput = (event : any) => {
+    this.userInput = event.currentTarget.value;
+  }
 }
